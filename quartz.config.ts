@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🌱 yokonの数字花园",
+    pageTitle: "yokonの数字花园",
     enableSPA: true,
     pageTitleSuffix: "",
     enablePopovers: true,
@@ -27,26 +27,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#ffffff",
+          lightgray: "#f3f4f6",
+          gray: "#9ca3af",
+          darkgray: "#4b5563",
+          dark: "#1f2937",
+          secondary: "#3b82f6",
+          tertiary: "#60a5fa",
+          highlight: "rgba(59, 130, 246, 0.1)",
+          textHighlight: "#fef08a",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#1f2937",
+          lightgray: "#374151",
+          gray: "#9ca3af",
+          darkgray: "#d1d5db",
+          dark: "#f9fafb",
+          secondary: "#60a5fa",
+          tertiary: "#3b82f6",
+          highlight: "rgba(96, 165, 250, 0.15)",
+          textHighlight: "#854d0e",
         },
       },
     },
@@ -64,10 +64,10 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
-      Plugin.ObsidianFlavoredMarkdown({ 
-        enableInHtmlEmbed: false, 
+      Plugin.ObsidianFlavoredMarkdown({
+        enableInHtmlEmbed: false,
         enableCheckbox: true,
-        disableBrokenWikilinks: true 
+        disableBrokenWikilinks: true,
       }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
@@ -86,13 +86,13 @@ const config: QuartzConfig = {
         enableSiteMap: true,
         enableRSS: true,
         rssLimit: 30,
-        rssFullHtml: true
+        rssFullHtml: true,
       }),
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      
+
       // Comment out CustomOgImages to speed up build time
       // Plugin.CustomOgImages({
       //   colorScheme: "lightMode", // what colors to use for generating image, same as theme colors from config, valid values are "darkMode" and "lightMode"
