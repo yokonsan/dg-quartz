@@ -1,12 +1,13 @@
 name: Deploy Quartz site to GitHub Pages
  
 on:
+  workflow_dispatch:
   push:
     branches:
       - v4
  
 env:
-  THEME_NAME: Minimal
+  THEME_NAME: tokyo-night
  
 permissions:
   contents: read
