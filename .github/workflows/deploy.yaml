@@ -7,7 +7,7 @@ on:
       - v4
  
 env:
-  THEME_NAME: tokyo-night
+  THEME_NAME: minimal
  
 permissions:
   contents: read
